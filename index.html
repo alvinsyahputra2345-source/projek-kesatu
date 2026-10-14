@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvin Syahputra | My Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font dari Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alvinsyahputra2345@gmail.com" class="btn-contact">Kirim Pesan</a>
+</head>
+<body>
+
+    <!-- Background bintang -->
+    <div class="stars" id="stars"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="logo">ALVIN<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Buka menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#social" class="nav-link">Social Media</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <p class="welcome">WELCOME TO MY WEBSITE</p>
+
+                <h1>Hi, I'm <span>Alvin Syahputra</span></h1>
+
+                <h2>I'm a <span id="typing"></span></h2>
+
+                <p class="description">
+                    Selamat datang di website pribadi saya.
+                    Kenali saya lebih dekat dan temukan media sosial
+                    serta informasi kontak saya di sini.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="btn primary">Explore More ↘</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="profile-circle">
+                    <div class="profile-initial">A<span>.</span></div>
+                </div>
+
+                <div class="floating-star star-one">✦</div>
+                <div class="floating-star star-two">✧</div>
+                <div class="floating-star star-three">✦</div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section about">
+            <p class="section-label">GET TO KNOW ME</p>
+            <h2 class="section-title">About <span>Me</span></h2>
+
+            <div class="about-card">
+                <div class="about-icon">✦</div>
+
+                <div>
+                    <h3>Alvin Syahputra</h3>
+                    <p>
+                        Perkenalkan nama saya Alvin Syahputra salah satu 
+                        siswa dari SMKN 1 PASURUAN. Disini saya masih dalam
+                        proses belajar membuat website.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Web Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL MEDIA -->
+        <section id="social" class="section social">
+            <p class="section-label">LET'S CONNECT</p>
+            <h2 class="section-title">My <span>Social Media</span></h2>
+
+            <p class="section-description">
+                Kunjungi akun media sosial saya melalui tautan berikut.
+            </p>
+
+            <div class="social-grid">
+                <a href="https://www.instagram.com/vynxvinz/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="social-card instagram">
+                    <div class="social-icon">◎</div>
+                    <h3>Instagram</h3>
+                    <p>Follow my Instagram</p>
+                    <span class="social-arrow">↗</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@vynxz_679"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="social-card tiktok">
+                    <div class="social-icon">♪</div>
+                    <h3>TikTok</h3>
+                    <p>Follow my TikTok</p>
+                    <span class="social-arrow">↗</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+            <p class="section-label">GET IN TOUCH</p>
+            <h2 class="section-title">Contact <span>Me</span></h2>
+
+            <p class="section-description">
+                Punya pesan untuk saya? Isi formulir di bawah ini.
+            </p>
+
+            <form id="contactForm" class="contact-form">
+                <label for="senderName">Nama kamu</label>
+                <input type="text" id="senderName"
+                       placeholder="Masukkan nama kamu" required>
+
+                <label for="senderEmail">Email kamu</label>
+                <input type="email" id="senderEmail"
+                       placeholder="nama@email.com" required>
+
+                <label for="message">Pesan</label>
+                <textarea id="message" rows="5"
+                          placeholder="Tulis pesan kamu di sini..."
+                          required></textarea>
+
+                <button type="submit" class="btn primary send-btn">
+                    Kirim Pesan ↗
+                </button>
+
+                <p class="form-note" id="formStatus" aria-live="polite">
+                    Pesan akan disiapkan melalui aplikasi email kamu.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#home" class="logo">ALVIN<span>.</span></a>
+        <p>© <span id="year"></span> Alvin Syahputra. All rights reserved.</p>
+        <a href="#home" class="back-top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
